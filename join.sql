@@ -25,3 +25,7 @@ select last_name from employees where department_id is null;
 
 select table_name from user_tab_columns
 where column_name = 'REGION_NAME';
+
+select b.last_name, d.department_name
+from employees b join departments d
+on b.employee_id = d.manager_id;
